@@ -14,6 +14,15 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CustomerDashboardComponent } from './components/customer-dashboard/customer-dashboard.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { CreateAccountComponent } from './components/create-account/create-account.component';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatSelectModule } from '@angular/material/select';
+import { AddBeneficiaryComponent } from './components/add-beneficiary/add-beneficiary.component';
+import { BeneficiaryDetailComponent } from './components/beneficiary-detail/beneficiary-detail.component';
+import { CustomerTransferComponent } from './components/customer-transfer/customer-transfer.component';
+import { MatTableModule } from '@angular/material/table';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -21,7 +30,13 @@ import { CustomerDashboardComponent } from './components/customer-dashboard/cust
     AppComponent,
     HeaderComponent,
     LoginComponent,
-    CustomerDashboardComponent
+    CustomerDashboardComponent,
+    CreateAccountComponent,
+    AddBeneficiaryComponent,
+    BeneficiaryDetailComponent,
+    CustomerTransferComponent,
+   
+ 
   ],
   imports: [
     BrowserModule,
@@ -34,7 +49,14 @@ import { CustomerDashboardComponent } from './components/customer-dashboard/cust
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSlideToggleModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatTableModule,
+    HttpClientModule
+
+
 
   ],
   providers: [],

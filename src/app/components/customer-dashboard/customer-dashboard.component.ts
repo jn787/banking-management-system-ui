@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CustomerService } from 'src/app/services/customer.service';
 
 @Component({
   selector: 'app-customer-dashboard',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerDashboardComponent implements OnInit {
 
-  constructor() { }
+  accounts:any
+
+  constructor(private customerService:CustomerService) { }
 
   ngOnInit(): void {
+    this.customerService.getAccountsByCustomerId(this.customerService.customer.userId).subscribe(res => {
+      console.log(res)
+      this.accounts = res
+    })
+
   }
 
 }

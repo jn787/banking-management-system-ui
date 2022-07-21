@@ -19,9 +19,7 @@ export class CustomerService {
     return this.http.get('http://localhost:8080/api/customer/load/'+username);
   }
 
-  getTokenByUsernameAndPassword(form:any){
-    return this.http.post('http://localhost:8080/api/login', form);
-  }
+
 
   getAccountsByCustomerId(customerId:any){
     return this.http.get('http://localhost:8080/api/customer/'+ customerId + '/account')
@@ -46,5 +44,10 @@ export class CustomerService {
    transfer(form:any){
     return this.http.put('http://localhost:8080/api/customer/transfer', form)
    }
+
+   loginUser(token:any) {
+    localStorage.setItem('token', token);
+  }
+   
    
 }

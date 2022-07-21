@@ -9,7 +9,7 @@
 
 .card-container {
   margin: auto;
-  width: 40%;
+  width: auto;
   display: flex;
   flex-direction: row; 
   padding: 10px;

@@ -6,6 +6,9 @@ import { CreateAccountComponent } from './components/create-account/create-accou
 import { CustomerDashboardComponent } from './components/customer-dashboard/customer-dashboard.component';
 import { CustomerTransferComponent } from './components/customer-transfer/customer-transfer.component';
 import { LoginComponent } from './components/login/login.component';
+import { StaffDashboardComponent } from './components/staff-dashboard/staff-dashboard.component';
+import { AdminDashboardComponent } from './components/admin-dashboard/admin-dashboard.component';
+
 
 
 const routes: Routes = [
@@ -20,6 +23,14 @@ const routes: Routes = [
   {
     path:"customer",
     component:CustomerDashboardComponent
+  },
+  {
+    path:"staff",
+    component: StaffDashboardComponent
+  },
+  {
+    path:"admin",
+    component: AdminDashboardComponent
   },
   {
     path:"create-account",

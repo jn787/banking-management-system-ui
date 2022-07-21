@@ -24,6 +24,14 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatTableModule} from '@angular/material/table';
 import { CreateStaffComponent } from './components/create-staff/create-staff.component';
 import { ViewStaffComponent } from './components/view-staff/view-staff.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { CreateAccountComponent } from './components/create-account/create-account.component';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatSelectModule } from '@angular/material/select';
+import { AddBeneficiaryComponent } from './components/add-beneficiary/add-beneficiary.component';
+import { BeneficiaryDetailComponent } from './components/beneficiary-detail/beneficiary-detail.component';
+import { CustomerTransferComponent } from './components/customer-transfer/customer-transfer.component';
+
 
 @NgModule({
   declarations: [
@@ -38,7 +46,13 @@ import { ViewStaffComponent } from './components/view-staff/view-staff.component
     ApproveAccountComponent,
     EnableBlockCustomerComponent,
     CreateStaffComponent,
-    ViewStaffComponent
+    ViewStaffComponent,
+    CreateAccountComponent,
+    AddBeneficiaryComponent,
+    BeneficiaryDetailComponent,
+    CustomerTransferComponent,
+   
+ 
   ],
   imports: [
     BrowserModule,
@@ -53,7 +67,14 @@ import { ViewStaffComponent } from './components/view-staff/view-staff.component
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MatTableModule
+    MatTableModule,
+    MatSlideToggleModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatTableModule,
+    HttpClientModule
+
+
 
   ],
   providers: [],

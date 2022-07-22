@@ -19,8 +19,8 @@ export class CreateAccountComponent implements OnInit {
     accountType: new FormControl('', Validators.required),
   });
 
-  createAccount(form: any, customerId: any) {
-    this.customerService.createAccount(customerId, form).subscribe(
+  createAccount(form: any) {
+    this.customerService.createAccount(localStorage.getItem("userId"), form).subscribe(
       (res) => {
         if (res) {
           alert('Account Created');

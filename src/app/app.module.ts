@@ -31,9 +31,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { AddBeneficiaryComponent } from './components/add-beneficiary/add-beneficiary.component';
 import { BeneficiaryDetailComponent } from './components/beneficiary-detail/beneficiary-detail.component';
 import { CustomerTransferComponent } from './components/customer-transfer/customer-transfer.component';
-import { UpdateUserComponent } from './components/update-user/update-user.component';
-import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
-import { RegistrationComponent } from './components/registration/registration.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,9 +51,6 @@ import { RegistrationComponent } from './components/registration/registration.co
     AddBeneficiaryComponent,
     BeneficiaryDetailComponent,
     CustomerTransferComponent,
-    UpdateUserComponent,
-    ForgotPasswordComponent,
-    RegistrationComponent
    
  
   ],
@@ -77,6 +73,9 @@ import { RegistrationComponent } from './components/registration/registration.co
     MatSelectModule,
     MatTableModule,
     HttpClientModule
+
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

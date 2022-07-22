@@ -13,7 +13,7 @@ export class CustomerDashboardComponent implements OnInit {
   constructor(private customerService:CustomerService) { }
 
   ngOnInit(): void {
-    this.customerService.getAccountsByCustomerId(localStorage.getItem("userId")).subscribe(res => {
+    this.customerService.getAccountsByCustomerId(this.customerService.customer.userId).subscribe(res => {
       console.log(res)
       this.accounts = res
     })

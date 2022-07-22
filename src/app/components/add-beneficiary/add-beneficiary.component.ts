@@ -23,8 +23,8 @@ export class AddBeneficiaryComponent implements OnInit {
 
   })
 
-  addBeneficiaryToAccount( customerId:any, form:any){
-      this.customerService.addBeneficiaryToAccount(customerId, form).subscribe(res => {
+  addBeneficiaryToAccount(form:any){
+      this.customerService.addBeneficiaryToAccount(localStorage.getItem("userId"), form).subscribe(res => {
             if(res){
               alert("Beneficiary added")
             }

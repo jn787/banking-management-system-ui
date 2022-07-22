@@ -1,17 +1,18 @@
+
 <mat-toolbar>
-  <button style="color: grey;" mat-button routerLink="/customer">View Dashboard</button>
-  <button style="color: grey;" mat-button routerLink="/create-account">Create Account</button>
-  <button style="color: grey;" mat-button routerLink="/add-beneficiary">Add Beneficiary</button>
-  <button style="color: grey;" mat-button routerLink="/view-beneficiary">View Beneficiary</button>
-  <button style="color: grey;" mat-button routerLink="/customer-transfer">Transfer</button>
-  <button style="color: grey;"mat-button>View Account Statement</button>
-  <button style="color: grey;"mat-button>Update Profile</button>
+  <div><button style="color: grey;" mat-button routerLink="/create-account">Create Account</button></div>
+  <div><button style="color: grey;" mat-button routerLink="/add-beneficiary">Add Beneficiary</button></div>
+  <div><button style="color: grey;" mat-button routerLink="/view-beneficiary">View Beneficiary</button></div>
+  <div><button style="color: grey;" mat-button routerLink="/customer-transfer">Transfer</button></div>
+  <div><button style="color: grey;"mat-button>View Account Statement</button></div>
+  <div><button style="color: grey;"mat-button>Update Profile</button></div>
 </mat-toolbar>
+
 
 <mat-card>
     <mat-card-content>
         <h2>Create Account</h2>
-        <form [formGroup] = "createAccountForm" (submit)="createAccount(createAccountForm.value, 1)">
+        <form [formGroup] = "createAccountForm" (submit)="createAccount(createAccountForm.value)">
             <mat-form-field>
                 <input matInput formControlName="customerName" placeholder="Customer Name" name="customerName" required ngModel>
                 <span style="color: red; font-size: x-small;" class="text-danger" *ngIf="createAccountForm.controls['customerName'].dirty && createAccountForm.hasError('required','customerName')">Customer Name is required</span>

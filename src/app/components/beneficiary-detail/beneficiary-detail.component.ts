@@ -19,8 +19,8 @@ export class BeneficiaryDetailComponent implements OnInit {
 
   }
 
-  deleteBeneficiary(beneficiaryId:any){
-    this.customerService.deleteBeneficiaryByCustomerIdAndBeneficiaryId(localStorage.getItem('userId'), beneficiaryId).subscribe(res => {
+  deleteBeneficiary(customerId:any, beneficiaryId:any){
+    this.customerService.deleteBeneficiaryByCustomerIdAndBeneficiaryId(customerId, beneficiaryId).subscribe(res => {
       alert(res)
       this.getAllBeneficiary()
     },
@@ -30,7 +30,7 @@ export class BeneficiaryDetailComponent implements OnInit {
   }
 
   getAllBeneficiary(){
-    this.customerService.getAllBeneficiaryByCustomerId(localStorage.getItem("userId")).subscribe(res => {
+    this.customerService.getAllBeneficiaryByCustomerId(this.customerService.customer.userId).subscribe(res => {
       console.log(res)
       this.items = res
     })

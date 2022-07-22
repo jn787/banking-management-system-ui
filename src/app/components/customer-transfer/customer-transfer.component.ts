@@ -24,7 +24,7 @@ export class CustomerTransferComponent implements OnInit {
   constructor(private customerService:CustomerService) { }
 
   ngOnInit(): void {
-    this.customerService.getAllAccountsByCustomerId(localStorage.getItem('userId')).subscribe(res => {
+    this.customerService.getAllAccountsByCustomerId(this.customerService.customer.userId).subscribe(res => {
       console.log(res)
       this.items = res
 

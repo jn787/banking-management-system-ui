@@ -34,7 +34,7 @@ export class StaffService {
   }
   enableCustomer(customer: any, status:any) {
     //0 = disable, 1 = enable
-    customer.status = status;
+    customer.accountStatus = status;
     return this.http.put(`${this.baseurl}api/staff/customer`,customer);
   }
 

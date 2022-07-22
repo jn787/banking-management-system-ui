@@ -8,6 +8,9 @@ import { CustomerTransferComponent } from './components/customer-transfer/custom
 import { LoginComponent } from './components/login/login.component';
 import { StaffDashboardComponent } from './components/staff-dashboard/staff-dashboard.component';
 import { AdminDashboardComponent } from './components/admin-dashboard/admin-dashboard.component';
+import { RegistrationComponent } from './components/registration/registration.component';
+import { UpdateUserComponent } from './components/update-user/update-user.component';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 
 
 
@@ -41,12 +44,24 @@ const routes: Routes = [
     component:AddBeneficiaryComponent
   },
   {
-  path:"view-beneficiary",
-  component:BeneficiaryDetailComponent
+    path:"view-beneficiary",
+    component:BeneficiaryDetailComponent
   },
   {
     path:"customer-transfer",
     component:CustomerTransferComponent
+  },
+  {
+    path:"registration",
+    component:RegistrationComponent
+  },
+  {
+    path:"update-user",
+    component:UpdateUserComponent
+  },
+  {
+    path:"forgotPassword",
+    component:ForgotPasswordComponent
   }
  
 

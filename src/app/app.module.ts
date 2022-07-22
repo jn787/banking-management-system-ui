@@ -23,6 +23,14 @@ import { BeneficiaryDetailComponent } from './components/beneficiary-detail/bene
 import { CustomerTransferComponent } from './components/customer-transfer/customer-transfer.component';
 import { MatTableModule } from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
+import { StaffDashboardComponent } from './components/staff-dashboard/staff-dashboard.component';
+import { AdminDashboardComponent } from './components/admin-dashboard/admin-dashboard.component';
+import { ApproveAccountComponent } from './components/approve-account/approve-account.component';
+import { CreateStaffComponent } from './components/create-staff/create-staff.component';
+import { SearchTransactionsByAccountNumberComponent } from './components/search-transactions-by-account-number/search-transactions-by-account-number.component';
+import { ViewStaffComponent } from './components/view-staff/view-staff.component';
+import { EnableBlockCustomerComponent } from './components/enable-block-customer/enable-block-customer.component';
+import { ApproveBeneficiaryComponent } from './components/approve-beneficiary/approve-beneficiary.component';
 
 
 @NgModule({
@@ -35,8 +43,14 @@ import { HttpClientModule } from '@angular/common/http';
     AddBeneficiaryComponent,
     BeneficiaryDetailComponent,
     CustomerTransferComponent,
-   
- 
+    StaffDashboardComponent,
+    AdminDashboardComponent,
+    ApproveAccountComponent,
+    CreateStaffComponent,
+    SearchTransactionsByAccountNumberComponent,
+    ViewStaffComponent,
+    EnableBlockCustomerComponent,
+    ApproveBeneficiaryComponent
   ],
   imports: [
     BrowserModule,
@@ -55,9 +69,6 @@ import { HttpClientModule } from '@angular/common/http';
     MatSelectModule,
     MatTableModule,
     HttpClientModule
-
-
-
   ],
   providers: [],
   bootstrap: [AppComponent]

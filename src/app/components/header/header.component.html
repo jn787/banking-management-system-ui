@@ -1,6 +1,6 @@
 <mat-toolbar color="primary">
     <span>Bank App</span>
     <span class="example-spacer"></span>
-    <button mat-button *ngIf="this.userService.isLoggedInBool" (click)="this.userService.logoutUser()"><mat-icon>exit_to_app</mat-icon>Logout</button>
-    <button mat-button routerLink="/login" *ngIf="!this.userService.isLoggedInBool" ><mat-icon>account_balance</mat-icon> Login </button>
+    <button mat-button routerLink="/login" ><mat-icon>account_balance</mat-icon> Login </button>
+    <button mat-button routerLink="/registration"><mat-icon>create</mat-icon> Sign-Up </button>
   </mat-toolbar>
